@@ -3,22 +3,23 @@
     padding: 0;
 }
 
-body {
-    font-family: 'Roboto';
-}
-
 body>.header>h1 {
     color: aliceblue;
-
+    font: times;
 
 }
+
+body {
+    font-family: 'Roboto' times;
+}
+
 
 nav {
     display: flex;
     flex-wrap: wrap;
     align-items: flex-end;
     justify-content: flex-end;
-    font-size: 18px;
+    font-size: 20px;
     font-weight: bold;
     font-family: sans-serif;
     padding: 15px;
@@ -144,7 +145,10 @@ label i {
 
 } */
 
-
+.turno {
+    display: flex;
+    align-items: center;
+}
 
 
 .hero {
