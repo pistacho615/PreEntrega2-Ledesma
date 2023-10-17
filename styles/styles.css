@@ -7,6 +7,12 @@ body {
     font-family: 'Roboto';
 }
 
+body>.header>h1 {
+    color: aliceblue;
+
+
+}
+
 nav {
     display: flex;
     flex-wrap: wrap;
@@ -18,9 +24,10 @@ nav {
     padding: 15px;
     background: linear-gradient(#661312);
     border: solid black 2px;
+    text-overflow: hidden;
 }
 
-nav a:hover {
+nav a {
     user-select: none;
     background-color: aliceblue;
     text-decoration: none;
@@ -29,6 +36,10 @@ nav a:hover {
     border-radius: 15px;
     transition: 0.3s;
     display: inline-block;
+}
+
+nav a:hover {
+    background-color: #0b3954;
 }
 
 /* nav a {
@@ -52,6 +63,22 @@ nav a:hover {
     justify-content: flex-end;
 }
 
+/* body>.header>.navbar>.navbar-button {
+    user-select: none;
+    background-color: aliceblue;
+    text-decoration: none;
+    padding: 10px 15px;
+    margin: 0 10px;
+    border-radius: 15px;
+    transition: 0.3s;
+    display: inline-block;
+    ;
+}
+
+body>.header>.navbar>.navbar-button:hover {
+    background-color: #0b3954;
+
+} */
 
 #toggler,
 label {
@@ -62,7 +89,7 @@ label i {
     color: red;
 }
 
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 800px) {
 
     .menu {
         width: 100%;
@@ -117,28 +144,10 @@ label i {
 
 } */
 
-body>.header>h1 {
-    color: aliceblue;
 
-}
 
-body>.header>.navbar>.navbar-button {
-    user-select: none;
-    background-color: aliceblue;
-    text-decoration: none;
-    padding: 10px 15px;
-    margin: 0 10px;
-    border-radius: 15px;
-    transition: 0.3s;
-    display: inline-block;
-}
 
-body>.header>.navbar>.navbar-button:hover {
-    background-color: #0b3954;
-    color: #fafafa;
-}
-
-body>.hero {
+.hero {
     color: #0b3954;
     display: flex;
     justify-content: center;
