@@ -19,7 +19,7 @@ nav {
     flex-wrap: wrap;
     align-items: flex-end;
     justify-content: flex-end;
-    font-size: 20px;
+    font-size: 10px;
     font-weight: bold;
     font-family: sans-serif;
     padding: 15px;
@@ -28,7 +28,7 @@ nav {
     text-overflow: hidden;
 }
 
-nav a {
+.navbar-button {
     user-select: none;
     background-color: aliceblue;
     text-decoration: none;
@@ -298,4 +298,56 @@ body {
 .turno {
     display: flex;
     flex-direction: column;
+}
+
+
+.img {
+    display: block;
+    max-width: 100%;
+
+
+
+}
+
+.wrapper {
+    overflow: hidden;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr 5fr;
+    grid-gap: 10px;
+}
+
+.gallery {
+    overflow: scroll;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+
+
+}
+
+.gallery__img {
+    scroll-snap-align: start;
+    margin-bottom: 10px;
+}
+
+.lil-nav {
+    overflow-y: scroll;
+    overflow-x: hidden;
+
+
+}
+
+
+.lil-nav__img {
+    object-fit: cover;
+    filter: saturate(0);
+    transition: 0.3s ease all;
+
+
+
+}
+
+.lil-nav__img:hover {
+    transform: scale(1.05);
+    filter: saturate(1);
 }
