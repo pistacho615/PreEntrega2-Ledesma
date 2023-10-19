@@ -14,7 +14,7 @@ body {
 }
 
 
-nav {
+.nav {
   display: flex;
   flex-wrap: wrap;
   align-items: flex-end;
@@ -359,10 +359,11 @@ img {
 }
 
 .lil-nav {
-  overflow-x: scroll;
+  overflow-x: hidden;
   overflow-y: hidden;
   display: flex;
   grid-row-start: 2;
+
 }
 
 @media screen and (min-width: 1200px) {
